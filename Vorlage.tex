@@ -1,0 +1,144 @@
+%Standard Dokumenten Einstellungen
+%Einstellen der Schriftgröße
+\documentclass[a4paper,12pt]{scrreport}
+
+%Einstellen des Seitenabstand
+\usepackage[left= 2.5cm,right = 2.5cm, bottom = 4 cm, top = 2.5cm]{geometry}
+%zum Ändern des Zeilenabstandes (singlespacing, onehalfspacing, doublespacing), mehr auf https://www.namsu.de/Extra/pakete/Setspace.html
+\usepackage[onehalfspacing]{setspace}
+
+%Schriftart
+\usepackage[T1]{fontenc}
+%Schriftarten Paket in die {} einfügen
+\usepackage{}
+
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+
+%Fußzeile
+\usepackage[headsepline=1pt, footsepline=1pt]{scrlayer-scrpage}
+\renewcommand*\chapterpagestyle{scrheadings}
+\pagestyle{scrheadings}
+\ihead{\Vorname{} \Nachname{}}
+\ohead{\Art{}}
+
+
+%===============================================================================
+% Standard Packages
+
+%Für das einfügen von Bildern
+\usepackage{graphicx}
+%Pfad zu den Bildern --> Bei Verwendung eines Bildes in includegraphics muss nur der Name des Bildes genannt werden, z.B. DHBW_Logo
+\graphicspath{{Pictures/}}
+
+%Für weitere komplexere Grafiken und Positionierung, mehr auf https://www.overleaf.com/learn/latex/TikZ_package
+\usepackage{tikz}
+
+%Für schönere Tabellen, mehr auf https://www.namsu.de/Extra/pakete/Tabularx.html
+\usepackage{tabularx}
+%Zum einfügen von PDF Dateien, mehr auf https://www.namsu.de/Extra/pakete/Pdfpages.html
+\usepackage{pdfpages}
+
+%Für das Literaturverzeichnis, ändern von style, ändert die Art der Zitierung und des Verzeichnis, mehr auf https://www.overleaf.com/learn/latex/Biblatex_bibliography_styles
+\usepackage[style = authortitle]{biblatex}
+\bibliography{Directorys/Literatur}{}
+
+%Fügt Abkürzungsverzeichnis hinzu
+%Hinzufügen von "printonlyused" in eckige Klammern, um nur verwendete Abkürzungen darzustellen
+\usepackage[]{acronym}
+
+% zusätzliche Schriftzeichen der American Mathematical Society
+\usepackage{amsfonts}
+\usepackage{amsmath}
+
+%Pakete für die Deutsche Sprache
+\usepackage[ngerman]{babel}
+\usepackage{csquotes}
+
+%Für Code
+\usepackage{float}
+\usepackage{fancyvrb}
+
+%Für Links und Hyperlinks
+\usepackage[colorlinks = true,
+            linkcolor = black,
+            urlcolor  = blue,
+            citecolor = black]{hyperref}
+
+%===============================================================================
+%Felder Ausfüllen, sie geben den Inhalt des Titelblatt an
+%Inhalt der Titelseite
+\newcommand{\Titel}{Titel der Projektarbeit}
+\newcommand{\Art}{Projektarbeit}
+\newcommand{\Vorname}{Max}
+\newcommand{\Nachname}{Mustermann}
+\newcommand{\Studiengang}{Studiengang}
+\newcommand{\Abgabedatum}{01.01.1111}
+\newcommand{\Bearbeitungszeitraum}{12 Wochen}
+\newcommand{\Matrikelnummer}{9999999999}
+\newcommand{\Kurskrzl}{Kurzkürzel}
+\newcommand{\Ausbildungsfirma}{Firma}
+\newcommand{\Standort}{Standort}
+\newcommand{\BetreuerFirma}{Titel Vorname Nachname}
+\newcommand{\BetreuerDHBW}{Titel Vorname Nachname}
+
+%Nur benötigt wenn Sperrvermerk verwendet wird
+\newcommand{\SperrvermerkAuslaufDatum}{31.12.2222}
+
+
+%===============================================================================
+%Start des Dokuments
+\begin{document}
+
+%Die Gliederung entspricht den Richtlinien der Informationstechnik Fakultät, bitte anpassen für die jeweiligen Richtlinien
+
+%Titelblatt
+\pagestyle{empty}
+\include{Sections/01_Title}
+
+%Sperrvermerk
+\pagestyle{empty}
+\include{Sections/02_Sperrvermerk}
+
+\pagenumbering{Roman}
+
+%Eigenleistung
+\include{Sections/03_Eigenleistung}
+
+%Abstract
+\include{Sections/04_Abstract}
+
+%===============================================================================
+%Verzeichnisse: Verwendete Verzeichnisse Aktivieren durch entfernen von: % vor dem \
+%Inhalt
+\tableofcontents
+\clearpage
+%Abkürzung
+\include{Directorys/Abkürzungsverzeichnis}
+%Grafiken
+%\listoffigures
+%Tabellen
+%\listoftables
+
+%Vorwort: Um Vorwort zu verwenden, % entfernen
+%\include{Sections/05_Vorwort}
+
+%===============================================================================
+%Weiter Gliederung:
+%Einleitung (Gegenstand und Ziele der Arbeit/Aufgabenbeschreibung, Einführung in Thema, Stand der Technik/Forschung, Motivation der Aufgabenstellung/Vorausblick)
+%Hauptteil (Anforderungsdefinition, Anforderungsanalyse, Lösungsgenerierung, Lösungsbewertung,Umsetzung) in sinnvollen Gliederungspunkten
+%Zusammenfassung und Ausblick
+\pagestyle{scrheadings}
+\pagenumbering{arabic}
+%===============================================================================
+%Eigene Kapitel
+%Kapitel als eigene .tex datei erstellen und einbinden mit: \include{Pfad/Dateiname}
+\include{Sections/Example}
+
+%===============================================================================
+\pagenumbering{Roman}
+%Literaturverzeichnis
+\printbibliography
+%Anhang
+
+\end{document}

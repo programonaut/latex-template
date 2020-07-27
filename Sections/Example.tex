@@ -1,0 +1,28 @@
+% !TEX root = ../Vorlage.tex
+\chapter{Beispiel Kapitel}
+Die Datei zu diesem Kapitel findest du im Sections Ordner, als Example.tex.\\
+In dieser Datei geht es darum euch einen Einblick in die Verwendung der Kommandos aus der Dokumentation Kapitel 3 zu geben \footcite{doku}.
+\section{Aufzählungen}
+Dort wird gezeigt wie man eine Aufzählung macht:
+\begin{itemize}
+ \item Erster Stichpunkt
+ \item Zweiter Stichpunkt
+\end{itemize}
+Oder auch wie diese Nummeriert dargestellt werden können.
+\begin{enumerate}
+ \item Erster Stichpunkt
+ \item Zweiter Stichpunkt
+\end{enumerate}
+\section{Bilder}
+Zudem wird gezeigt wie man Bilder einfügt und diese referenzieren kann.
+\begin{center}
+ \begin{figure}[h!]
+  \centering
+  \includegraphics[scale = 0.3]{DHBW_Logo}
+  \caption{Dies ist ein Logo, link zu DHBW Logo ist in Pictures/downloads.txt zu finden}
+  \label{fig:dhbwlogo}
+ \end{figure}
+\end{center}
+Sowie zum Beispiel \ref{fig:dhbwlogo} referenziert wird.
+\section{Zitieren}
+Ein weiterer Teil ist, wie zitiert wird, ob auf \glqq{}Deutsche\grqq{} oder auf ``Englische'' Art und Weise\footcite[3.2]{doku}.
