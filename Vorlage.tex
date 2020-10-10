@@ -12,9 +12,6 @@
 %Schriftarten Paket in die {} einfügen
 \usepackage{}
 
-\setcounter{secnumdepth}{5}
-\setcounter{tocdepth}{5}
-
 %Fußzeile
 \usepackage[headsepline=1pt, footsepline=1pt]{scrlayer-scrpage}
 \renewcommand*\chapterpagestyle{scrheadings}
@@ -79,6 +76,8 @@
 \newcommand{\Matrikelnummer}{9999999999}
 \newcommand{\Kurskrzl}{Kurzkürzel}
 \newcommand{\Ausbildungsfirma}{Firma}
+%Benötigt bei Elektrotechnik Titelseite
+\newcommand{\Abteilung}{Abteilung}
 \newcommand{\Standort}{Standort}
 \newcommand{\BetreuerFirma}{Titel Vorname Nachname}
 \newcommand{\BetreuerDHBW}{Titel Vorname Nachname}
@@ -95,43 +94,48 @@
 
 %Titelblatt
 \pagestyle{empty}
-\include{Sections/01_Title}
+\include{Sections-Default/Title-Informationstechnik}
+%\include{Sections-Default/Title-Elektrotechnik}
 
 %Sperrvermerk
 \pagestyle{empty}
-\include{Sections/02_Sperrvermerk}
+\include{Sections-Default/Sperrvermerk-Informationstechnik}
+%\include{Sections-Default/Sperrvermerk-Elektrotechnik}
 
 \pagenumbering{Roman}
 
 %Eigenleistung
-\include{Sections/03_Eigenleistung}
+\include{Sections-Default/Eigenleistung}
 
 %Abstract
-\include{Sections/04_Abstract}
+%\include{Sections-Default/Abstract-Englisch}
+\include{Sections-Default/Abstract-Deutsch}
 
-%===============================================================================
+%Tabelle Überblick Tätigkeiten (Elektrotechnik)
+\include{Sections-Default/Ueberblick_Taetigkeiten}
+
+%===================================================
 %Verzeichnisse: Verwendete Verzeichnisse Aktivieren durch entfernen von: % vor dem \
-%Inhalt
-\tableofcontents
-\clearpage
-%Abkürzung
-\include{Directorys/Abkürzungsverzeichnis}
-%Grafiken
-%\listoffigures
-%Tabellen
-%\listoftables
+%Inhaltsverzeichnis
+%\addcontentsline{toc}{chapter}{Inhaltsverzeichnis}\tableofcontents\clearpage
+
+%Abbildungsverzeichnis
+%\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}\listoffigures\clearpage
+
+%Tabellenverzeichnis
+%\addcontentsline{toc}{chapter}{Tabellenverzeichnis}\listoftables\clearpage
+
+%Abkürzungsverzeichnis
+%\include{Directorys/Abkürzungsverzeichnis}
+%===============================================================================
 
 %Vorwort: Um Vorwort zu verwenden, % entfernen
-%\include{Sections/05_Vorwort}
+%\include{Sections-Default/Vorwort}
 
-%===============================================================================
-%Weiter Gliederung:
-%Einleitung (Gegenstand und Ziele der Arbeit/Aufgabenbeschreibung, Einführung in Thema, Stand der Technik/Forschung, Motivation der Aufgabenstellung/Vorausblick)
-%Hauptteil (Anforderungsdefinition, Anforderungsanalyse, Lösungsgenerierung, Lösungsbewertung,Umsetzung) in sinnvollen Gliederungspunkten
-%Zusammenfassung und Ausblick
 \pagestyle{scrheadings}
 \pagenumbering{arabic}
 %===============================================================================
+
 %Eigene Kapitel
 %Kapitel als eigene .tex datei erstellen und einbinden mit: \include{Pfad/Dateiname}
 \include{Sections/Example}
@@ -139,7 +143,7 @@
 %===============================================================================
 \pagenumbering{Roman}
 %Literaturverzeichnis
-\printbibliography
+\addcontentsline{toc}{chapter}{Literaturverzeichnis}\printbibliography[title=Literaturverzeichnis]
 %Anhang
 
 \end{document}

@@ -1,5 +1,5 @@
 % Wichtig, damit man nicht immer von Vorlage.tex bauen muss
-% !TEX root = ../Vorlage.tex
+%!TEX root = ../Vorlage.tex
 
 %===========Logos============================================
 %DHBW_Logo
@@ -9,50 +9,52 @@
 \end{tikzpicture}
 
 %Firmen Logo
-% \begin{tikzpicture}[remember picture,overlay]
-%    \node[anchor=north west,inner xsep=50pt, inner ysep=25pt] at (current page.north west)
-%               {\includegraphics[scale=0.25]{Logo1}};
-% \end{tikzpicture}
+\begin{tikzpicture}[remember picture,overlay]
+ \node[anchor=north west,inner xsep=50pt, inner ysep=25pt] at (current page.north west)
+ {\includegraphics[scale=0.2]{ABB_Logo}};
+\end{tikzpicture}
 
 %===========Inhalt===========================================
-\vspace{1cm}
+\vspace{0.5cm}
 
 \begin{center}
  \large{\Titel}
 \end{center}
 
-\vspace{1cm}
+\vspace{0.5cm}
 
 \begin{center}
  \textbf{\Art}
 \end{center}
 
-\vspace{4cm}
+\vspace{2.5cm}
 
 \begin{center}
  des Studienganges \Studiengang \\
  an der Dualen Hochschule Baden-Württemberg Mannheim
 \end{center}
 
-\vspace{0.75cm}
+\vspace{0.5cm}
 
 \begin{center}
  von\\
  \Vorname{} \Nachname
 \end{center}
 
-\vspace{1cm}
+\vspace{0.5cm}
 
 \begin{center}
  \Abgabedatum
 \end{center}
 
-\vspace{2cm}
+\vspace{0.5cm}
 
 \begin{tabular}{l@{\hspace{2cm}}l}
  Bearbeitungszeitraum:            & \Bearbeitungszeitraum        \\
  Matrikelnummer, Kurs:            & \Matrikelnummer, \Kurskrzl   \\
- Ausbildungsfirma:                & \Ausbildungsfirma, \Standort \\
- Betreuer der Ausbildungsfirma:   & \BetreuerFirma               \\
- Gutachter der Dualen Hochschule: & \BetreuerDHBW                \\
+ Ausbildungsfirma, Abteilung:     & \Ausbildungsfirma, \Abteilung\\
+ Standort:                        & \Standort                    \\
+ Betreuer der Ausbildungsfirma:   & \BetreuerFirma               \\\\\\\cline{2-2}
+ %Gutachter der Dualen Hochschule: & \BetreuerDHBW
+                                  & Unterschrift (Betreuer)
 \end{tabular}

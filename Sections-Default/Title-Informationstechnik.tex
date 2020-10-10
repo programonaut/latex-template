@@ -1,0 +1,61 @@
+% Wichtig, damit man nicht immer von Vorlage.tex bauen muss
+% !TEX root = ../Vorlage.tex
+
+%===========Logos============================================
+%DHBW_Logo
+\begin{tikzpicture}[remember picture,overlay]
+ \node[anchor=north east,inner xsep=50pt, inner ysep=25pt] at (current page.north east)
+ {\includegraphics[scale=0.25]{DHBW_Logo}};
+\end{tikzpicture}
+
+%Firmen Logo
+\begin{tikzpicture}[remember picture,overlay]
+   \node[anchor=north west,inner xsep=50pt, inner ysep=25pt] at (current page.north west)
+              {\includegraphics[scale=0.2]{ABB_Logo}};
+\end{tikzpicture}
+
+%===========Inhalt===========================================
+\vspace{1cm}
+
+\begin{center}
+ \large{\Titel}
+\end{center}
+
+\vspace{1cm}
+
+\begin{center}
+ \textbf{\Art}
+\end{center}
+
+\vspace{4cm}
+
+\begin{center}
+ des Studienganges \Studiengang \\
+ an der Dualen Hochschule Baden-Württemberg Mannheim
+\end{center}
+
+\vspace{0.75cm}
+
+\begin{center}
+ von\\
+ \Vorname{} \Nachname
+\end{center}
+
+\vspace{1cm}
+
+\begin{center}
+ \Abgabedatum
+\end{center}
+
+\vspace{2cm}
+
+\begin{tabular}{l@{\hspace{2cm}}l}
+ Bearbeitungszeitraum:            & \Bearbeitungszeitraum        \\
+ Matrikelnummer, Kurs:            & \Matrikelnummer, \Kurskrzl   \\
+ Ausbildungsfirma:                & \Ausbildungsfirma, \Standort \\
+ Betreuer der Ausbildungsfirma:   & \BetreuerFirma               \\
+ %Gutachter der Dualen Hochschule: & \BetreuerDHBW                \\
+                                                                 \\
+                                                                 \\
+\cline{2-2} & Unterschrift (Betreuer)
+\end{tabular}
