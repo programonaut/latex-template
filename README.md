@@ -2,8 +2,10 @@
 
 1. [Setup LaTeX in Atom](#setup-latex-in-atom)
 2. [LaTeX Introduction](#latex-introduction)
-    - [Hierarchy](#Hierarchy)
-    - [Figure](#Figure)
+    - [Hierarchy](#hierarchy)
+    - [Figure](#figure)
+    - [Enumeration](#enumeration)
+    - [Table](#table)
 
 ## Setup LaTeX in Atom
 
@@ -129,6 +131,6 @@
 
 ![table-image](https://user-images.githubusercontent.com/47224024/98450294-f7da5480-213b-11eb-9452-9adcc3288edd.png)
 
-> To add the caption above just move `caption` and `label` above the 'tabular' enviroment
+> :exclamation:	To add the caption above just move `caption` and `label` above the 'tabular' enviroment
 
-> For easy table creation look [here](https://www.tablesgenerator.com/#)
+> :question: For easy table creation look [here](https://www.tablesgenerator.com/#)
