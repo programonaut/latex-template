@@ -76,13 +76,40 @@
 ### Figure
 **Input:**
 ```latex
-\begin{figure}[H]                             %H to display it exactly where its in the code
-\center                                       %centers image
-\includegraphics[scale = 0.3]{Logo}           %image in 'pictures' directory, scaled down to 30%
-\caption{caption}                             %will be the caption of the image
-\label{fig:Logo}                              %used to reference figure in text
+\begin{figure}[H]                               %H to display it exactly where its in the code
+    \center                                     %centers image
+    \includegraphics[scale = 0.3]{Logo}         %image in 'pictures' directory, scaled down to 30%
+    \caption{caption}                           %will be the caption of the image
+    \label{fig:Logo}                            %used to reference figure in text
 \end{figure}
+\noindent                                       %to remove indentation after figure
 ```
 **Output:**
 
 ![figure-image](https://user-images.githubusercontent.com/47224024/98449863-dbd4b400-2137-11eb-8dfb-97e32a30c0d1.png)
+
+### Enumeration
+#### Ordered:
+**Input:**
+```latex
+\begin{enumerate}
+  \item first element
+  \item second element
+\end{enumerate}
+```
+**Output:**
+
+![orderd-enum-image](https://user-images.githubusercontent.com/47224024/98450058-9a450880-2139-11eb-9b6e-104dc4e612b9.png)
+
+#### Unorderd:
+**Input:**
+```latex
+\begin{itemize}
+    \item first element
+    \item second element
+\end{itemize}
+```
+**Output:**
+
+![unorderd-enum-image](https://user-images.githubusercontent.com/47224024/98450026-54884000-2139-11eb-979b-8869f9f16854.png)
+
