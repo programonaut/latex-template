@@ -36,7 +36,7 @@
 - Build on Save: starts a build when the file is safed ('ctrl + s' or by clicking 'File>Save..')
 - Open Result after Successful Build: opens the pdf in the 'pdf-view' after the build finished
 
-##### To edit the settings:
+**To edit the settings:**
 
 1. Open packages tab in the settings window
 2. Search for the package latex and open the package settings
@@ -47,7 +47,7 @@
 - Use Locales: if locals should be used for the spell check
 - Locales: what locals should be used for the spell check (example: en-US, de-DE)
 
-##### To edit the settings:
+**To edit the settings:**
 
 1. Open packages tab in the settings window
 2. Search for the package 'spell-check' and open the package settings
