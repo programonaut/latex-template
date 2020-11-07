@@ -52,4 +52,4 @@
 3. Add 'text.tex.latex' and the end of the field 'Grammars'
 4. Enable 'Use Locals'
 5. Add desired language to 'Locales' (for german add: 'de-DE')
-> To add support for more languages in 'Locales', check [here](https://atom.io/packages/spell-check) under 'Changing the dictionary'
+> To add support for more languages in 'Locales', check [here](https://atom.io/packages/spell-check) in the 'Changing the dictionary' section
