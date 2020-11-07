@@ -30,11 +30,12 @@
     - language-latex (syntax highlighting, makes the tex file much easier to read)
     - latex-autocomplete (helps you to create figures, items, etc.)
     - autocomplete-latex (helps you to create figures, items, etc.)
-    - pdf-view - (required, shows the compiled latex file in the editor)
+    - pdf-view - (shows the compiled pdf file in the editor)
 
 ### Optional settings:
 
 #### 'latex' package settings:
+![latex-image](https://user-images.githubusercontent.com/47224024/98450442-1db42900-213d-11eb-92b1-827688ae54e3.png)
 
 - Ouput Directory: saves the meta files in the defined directory, this helps to keep your root directory clean
 - Move Result to Source Directory: saves the pdf file in the same folder as the producing tex document
@@ -47,6 +48,7 @@
 2. Search for the package latex and open the package settings
 
 #### 'spell-check' package settings:
+![spell-check-image](https://user-images.githubusercontent.com/47224024/98450472-3cb2bb00-213d-11eb-95d6-fa9f94c29a64.png)
 
 - Grammars: the file types that will be spell checked
 - Use Locales: if locals should be used for the spell check
