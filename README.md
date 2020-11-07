@@ -55,3 +55,31 @@
 4. Enable 'Use Locals'
 5. Add desired language to 'Locales' (for german add: 'de-DE')
 > To add support for more languages in 'Locales', check [here](https://atom.io/packages/spell-check) in the 'Changing the dictionary' section
+
+## LaTeX Introduction
+
+### Hierarchy
+**Input:**
+
+```latex
+\chapter{chapter}
+\section{section}
+\subsection{sub section}
+```
+**Output:**
+
+![hierarchy-image](https://user-images.githubusercontent.com/47224024/98449617-37517280-2135-11eb-86d5-0534ca5cbf4b.png)
+
+### Figure
+**Input:**
+```latex
+\begin{figure}[H]                             %H to display it exactly where its in the code
+\center                                       %centers image
+\includegraphics[scale = 0.3]{Logo}           %image in 'pictures' directory, scaled down to 30%
+\caption{caption}                             %will be the caption of the image
+\label{fig:Logo}                              %used for reference in text
+\end{figure}
+```
+**Output:**
+
+![figure-image](https://user-images.githubusercontent.com/47224024/98449863-dbd4b400-2137-11eb-8dfb-97e32a30c0d1.png)
