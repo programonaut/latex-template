@@ -113,3 +113,22 @@
 
 ![unorderd-enum-image](https://user-images.githubusercontent.com/47224024/98450026-54884000-2139-11eb-979b-8869f9f16854.png)
 
+### Table
+**Input:**
+```latex
+\begin{table}[H]
+  \center                                       %to center the table
+  \begin{tabular}{l|l|l}                        %l for the column, | for divider
+  A & B & C                                     %& for the column divider
+  \end{tabular}
+  \caption{caption}                             %will be the caption of the image
+  \label{fig:Logo}                              %used to reference figure in text
+\end{table}
+```
+**Output:**
+
+![table-image](https://user-images.githubusercontent.com/47224024/98450294-f7da5480-213b-11eb-9452-9adcc3288edd.png)
+
+> To add the caption above just move `caption` and `label` above the 'tabular' enviroment
+
+> For easy table creation look [here](https://www.tablesgenerator.com/#)
