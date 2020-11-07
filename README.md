@@ -1,5 +1,7 @@
 # Latex Template Documentation
 
+1. [Setup LaTeX in Atom](#setup-latex-in-atom)
+
 ## Setup LaTeX in Atom
 
 ### Required settings:
