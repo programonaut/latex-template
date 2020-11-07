@@ -1,6 +1,9 @@
 # Latex Template Documentation
 
 1. [Setup LaTeX in Atom](#setup-latex-in-atom)
+2. [LaTeX Introduction](#latex-introduction)
+    - [Hierarchy](#Hierarchy)
+    - [Figure](#Figure)
 
 ## Setup LaTeX in Atom
 
@@ -77,7 +80,7 @@
 \center                                       %centers image
 \includegraphics[scale = 0.3]{Logo}           %image in 'pictures' directory, scaled down to 30%
 \caption{caption}                             %will be the caption of the image
-\label{fig:Logo}                              %used for reference in text
+\label{fig:Logo}                              %used to reference figure in text
 \end{figure}
 ```
 **Output:**
