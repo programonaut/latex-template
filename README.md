@@ -64,6 +64,7 @@
 ## LaTeX Introduction
 
 ### Hierarchy
+---
 **Input:**
 
 ```latex
@@ -76,6 +77,7 @@
 ![hierarchy-image](https://user-images.githubusercontent.com/47224024/98449617-37517280-2135-11eb-86d5-0534ca5cbf4b.png)
 
 ### Figure
+---
 **Input:**
 ```latex
 \begin{figure}[H]                               %H to display it exactly where its in the code
@@ -91,6 +93,7 @@
 ![figure-image](https://user-images.githubusercontent.com/47224024/98449863-dbd4b400-2137-11eb-8dfb-97e32a30c0d1.png)
 
 ### Enumeration
+---
 #### Ordered:
 **Input:**
 ```latex
@@ -116,6 +119,7 @@
 ![unorderd-enum-image](https://user-images.githubusercontent.com/47224024/98450026-54884000-2139-11eb-979b-8869f9f16854.png)
 
 ### Table
+---
 **Input:**
 ```latex
 \begin{table}[H]
