@@ -9,6 +9,9 @@
     - [Code](#code)
     - [Quotation marks](#quotation-marks)
 3. [Quote](#quote)
+    - [Create a bibliography](#create-a-bibliography)
+    - [Cite media](#cite-media)
+    - [Change the citation style](#change-the-citation-style)
 
 ## Setup LaTeX in Atom
 
@@ -187,7 +190,7 @@ To quote in LaTex you have to create a bibliography file. In the template it can
 To make this process easier, you can use other tools like 'Citavi' to create this file for you, and keep your bibliography up to date.
 
 **WIP - How to use Citavi with LaTeX**
-### Cite entrys
+### Cite media
 
 **Input:**
 ```latex
@@ -201,6 +204,7 @@ In this part of the text I cite a test entry.\cite{test}
 % }
 ```
 **Output:**
+
 In the text you will get a reference to bibliography entry.
 
 ![image](https://user-images.githubusercontent.com/47224024/98483378-13129600-2208-11eb-99d9-3a2462ec0ca7.png)
