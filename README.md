@@ -176,7 +176,7 @@ WIP
 
 ## Quote
 ### Create a bibliography
-To quote in LaTex you have to create a bibliography file. In the template it can be found in the folder 'Directorys' and here you can add literature. An entry needs to have the following format:
+To quote in LaTeX you have to create a bibliography file. In the template it can be found in the folder 'Directorys' and here you can add literature. An entry needs to have the following format:
 ```latex
 @book{key,
  author = {author},
