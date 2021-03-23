@@ -1,3 +1,6 @@
+%Dateiname der PDF definieren
+% !TEX jobname = Mein_PDF_Dateiname
+
 %Standard Dokumenten Einstellungen
 %Einstellen der Schriftgröße
 \documentclass[a4paper,12pt]{scrreport}
@@ -87,6 +90,11 @@
 %Nur benötigt wenn Sperrvermerk verwendet wird
 \newcommand{\SperrvermerkAuslaufDatum}{31.12.2222}
 
+%Eigenschaften des PDF Dokuments anpassen (Titel, Art der Arbeit, Autor)
+\hypersetup{pdftitle={\Titel},
+            pdfsubject={\Art},
+            pdfauthor={{\Vorname} {\Nachname}}
+            }
 
 %===============================================================================
 %Start des Dokuments
