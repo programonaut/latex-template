@@ -1,18 +1,5 @@
 # Latex Template Documentation
 
-1. [Setup LaTeX in Atom](#setup-latex-in-atom)
-2. [LaTeX Introduction](#latex-introduction)
-    - [Hierarchy](#hierarchy)
-    - [Figure](#figure)
-    - [Enumeration](#enumeration)
-    - [Table](#table)
-    - [Code](#code)
-    - [Quotation marks](#quotation-marks)
-3. [Quote](#quote)
-    - [Create a bibliography](#create-a-bibliography)
-    - [Cite media](#cite-media)
-    - [Change the citation style](#change-the-citation-style)
-
 ## Setup LaTeX in Atom
 
 ### Required settings:
