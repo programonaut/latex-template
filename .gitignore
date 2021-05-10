@@ -1,4 +1,4 @@
 build-files/
-template.synctex*
+*.synctex*
 *.aux
-template.pdf
+*.pdf
