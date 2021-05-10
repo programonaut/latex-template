@@ -1,0 +1,113 @@
+% !TeX root = ../template.tex
+
+% ===========
+% Konfiguration der Formattierung
+
+%Einstellen des Seitenabstand
+\usepackage[left= 2.5cm,right = 2.5cm, bottom = 4 cm, top = 2.5cm]{geometry}
+%zum Ändern des Zeilenabstandes (singlespacing, onehalfspacing, doublespacing), mehr auf https://www.namsu.de/Extra/pakete/Setspace.html
+\usepackage[onehalfspacing]{setspace}
+
+%Schriftart
+\usepackage[T1]{fontenc}
+%Schriftarten Paket in die {} einfügen
+\usepackage{}
+
+
+%Fußzeile
+\usepackage[headsepline=1pt, footsepline=1pt]{scrlayer-scrpage}
+
+% Kopfzeile
+\renewcommand*\chapterpagestyle{scrheadings}
+\pagestyle{scrheadings}
+\ihead{\Vorname{} \Nachname{}}
+\ohead{\Art{}}
+
+% ===========
+% Standard Pakete
+\setlength{\marginparwidth}{2cm}
+\usepackage{todonotes}
+
+%Enfernt eine Fehlermeldung (KOMA-Script)
+\usepackage{scrhack}
+
+%Für das einfügen von Bildern
+\usepackage{graphicx}
+%Pfad zu den Bildern --> Bei Verwendung eines Bildes in includegraphics muss nur der Name des Bildes genannt werden, z.B. DHBW_Logo
+\graphicspath{{resources/images/}}
+
+% Mehrere Bilder/Tabllen in einer Figure erstellen
+\usepackage{subcaption}
+
+%Für weitere komplexere Grafiken und Positionierung, mehr auf https://www.overleaf.com/learn/latex/TikZ_package
+\usepackage{tikz}
+
+%Für schönere Tabellen, mehr auf https://www.namsu.de/Extra/pakete/Tabularx.html
+\usepackage{tabularx}
+%Zum einfügen von PDF Dateien, mehr auf https://www.namsu.de/Extra/pakete/Pdfpages.html
+\usepackage{pdfpages}
+
+%Für das Literaturverzeichnis, ändern von style, ändert die Art der Zitierung und des Verzeichnis, mehr auf https://www.overleaf.com/learn/latex/Biblatex_bibliography_styles
+\usepackage[style = ieee]{biblatex}
+\bibliography{resources/directories/bibliography}{}
+
+%Fügt Abkürzungsverzeichnis hinzu
+%Hinzufügen von "printonlyused" in eckige Klammern, um nur verwendete Abkürzungen darzustellen
+\usepackage[]{acronym}
+
+% zusätzliche Schriftzeichen der American Mathematical Society
+\usepackage{amsfonts}
+\usepackage{amsmath}
+
+%Pakete für die Deutsche Sprache
+\usepackage[ngerman]{babel}
+\usepackage{csquotes}
+
+%Für Code
+\usepackage{float}
+\usepackage{fancyvrb}
+
+%Für Links und Hyperlinks
+\usepackage[colorlinks = true,
+            linkcolor = black,
+            urlcolor  = black,
+            citecolor = black]{hyperref}
+
+%Eigenschaften des PDF Dokuments anpassen (Titel, Art der Arbeit, Autor)
+\hypersetup{pdftitle={\Titel},
+            pdfsubject={\Art},
+            pdfauthor={{\Vorname} {\Nachname}}
+            }
+
+
+%Code Formatierung
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{comment}{HTML}{0A943F}
+\definecolor{linenumber}{HTML}{424445}
+\definecolor{keyword}{HTML}{184FDB}
+\definecolor{background}{HTML}{F2F2F2}
+\definecolor{string}{HTML}{DB9418}
+
+\lstdefinestyle{code}{
+    backgroundcolor=\color{background},   
+    commentstyle=\color{comment},
+    keywordstyle=\color{keyword},
+    numberstyle=\tiny\color{linenumber},
+    stringstyle=\color{string},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    morekeywords={
+    	var
+    }
+}

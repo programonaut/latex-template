@@ -1,0 +1,72 @@
+%Standard Dokumenten Einstellungen
+%Einstellen der Schriftgröße
+\documentclass[a4paper,12pt]{scrreport}
+
+% Eingabe der benötigten Konfigurationen
+\input{config/parameter.tex} 
+\input{config/packages.tex}
+
+
+%===============================================================================
+%Start des Dokuments
+\begin{document}
+
+%Die Gliederung entspricht den Richtlinien der Informationstechnik Fakultät, bitte anpassen für die jeweiligen Richtlinien
+
+%Titelblatt
+\include{sections/defaults/title/title.tex}
+
+%List of Todos
+\listoftodos\clearpage
+
+%Sperrvermerk
+\pagestyle{empty}
+\include{sections/defaults/blocking-notice/blocking-notice-it.tex}
+% \include{sections/defaults/blocking-notice/blocking-notice-et.tex}
+
+\pagenumbering{Roman}
+
+%Eigenleistung
+\include{sections/defaults/personal-contribution/personal-contribution.tex}
+
+%Abstract
+\include{sections/abstract/abstract-ger.tex}
+% \include{sections/abstract/abstract-eng.tex}
+
+%===================================================
+%Verzeichnisse: Verwendete Verzeichnisse Aktivieren durch entfernen von: % vor dem \
+
+%Inhaltsverzeichnis
+%\addcontentsline{toc}{chapter}{Inhaltsverzeichnis}\tableofcontents\clearpage
+
+%Abbildungsverzeichnis
+%\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}\listoffigures\clearpage
+
+%Tabellenverzeichnis
+%\addcontentsline{toc}{chapter}{Tabellenverzeichnis}\listoftables\clearpage
+
+%Lstingverzeichnis
+% \addcontentsline{toc}{chapter}{Listingverzeichnis}\lstlistoflistings\clearpage
+
+%Abkürzungsverzeichnis
+%\include{resources/directories/acronyms.tex}
+%===============================================================================
+
+%Vorwort: Um Vorwort zu verwenden, % entfernen
+% \include{sections/other/preface.tex}
+
+\pagestyle{scrheadings}
+\pagenumbering{arabic}
+%===============================================================================
+
+%Eigene Kapitel
+%Kapitel als eigene .tex datei erstellen und einbinden mit: \include{Pfad/Dateiname}
+\include{Sections/Example}
+
+%===============================================================================
+\pagenumbering{Roman}
+%Literaturverzeichnis
+\addcontentsline{toc}{chapter}{Literaturverzeichnis}\printbibliography[title=Literaturverzeichnis]
+%Anhang
+
+\end{document}

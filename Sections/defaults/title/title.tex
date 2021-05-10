@@ -1,17 +1,17 @@
-% Wichtig, damit man nicht immer von Vorlage.tex bauen muss
-%!TEX root = ../Vorlage.tex
+% !TeX root = ../../../template.tex
 
+\pagestyle{empty}
 %===========Logos============================================
 %DHBW_Logo
 \begin{tikzpicture}[remember picture,overlay]
  \node[anchor=north east,inner xsep=50pt, inner ysep=25pt] at (current page.north east)
- {\includegraphics[scale=0.25]{DHBW_Logo}};
+ {\includegraphics[scale=0.25]{dhbw-logo}};
 \end{tikzpicture}
 
 %Firmen Logo
 \begin{tikzpicture}[remember picture,overlay]
  \node[anchor=north west,inner xsep=50pt, inner ysep=25pt] at (current page.north west)
- {\includegraphics[scale=0.2]{ABB_Logo}};
+ {\includegraphics[scale=0.2]{company-logo}};
 \end{tikzpicture}
 
 %===========Inhalt===========================================
