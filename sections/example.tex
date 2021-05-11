@@ -3,6 +3,7 @@
 \chapter{Beispiel Kapitel}
 Die Datei zu diesem Kapitel findest du im Sections Ordner, als Example.tex.\\
 In dieser Datei geht es darum euch einen Einblick in die Verwendung der Kommandos aus der Dokumentation Kapitel 3 zu geben \footcite{doku}.
+
 \section{Aufzählungen}
 Dort wird gezeigt wie man eine Aufzählung macht:
 \begin{itemize}
@@ -14,6 +15,7 @@ Oder auch wie diese Nummeriert dargestellt werden können.
  \item Erster Stichpunkt
  \item Zweiter Stichpunkt
 \end{enumerate}
+
 \section{Bilder}
 Zudem wird gezeigt wie man Bilder einfügt und diese referenzieren kann.
 \begin{center}
@@ -25,6 +27,7 @@ Zudem wird gezeigt wie man Bilder einfügt und diese referenzieren kann.
  \end{figure}
 \end{center}
 Sowie zum Beispiel \ref{fig:dhbwlogo} referenziert wird.
+
 \section{Zitieren}
 Ein weiterer Teil ist, wie zitiert wird, ob auf \glqq{}Deutsche\grqq{} oder auf ``Englische'' Art und Weise\footcite[3.2]{doku}.
 
@@ -35,3 +38,18 @@ Ein weiterer Teil ist, wie zitiert wird, ob auf \glqq{}Deutsche\grqq{} oder auf 
 \cite[1\psqq]{doku}
 
 \cite[1-4]{doku}
+
+\todo[inline]{Der Absatz-Stil sieht scheiße aus. Vorschag: parskip=full}
+
+\section{Code}
+\lstinline$var myValue$
+
+You can write normal text and inbetween \lstinline$comes the inline listing aka code snippet$. Afterwards you can just continue writing normal text.
+
+\begin{lstlisting}[caption={My caption}, label={lst:my-label-1}]
+    import numpy as np
+\end{lstlisting}
+
+\lstinputlisting[caption={Here comes the caption},
+                label={lst:my-label-2}]
+                {resources/code/placeholder.py}
