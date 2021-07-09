@@ -13,5 +13,5 @@ echo "currFilename.tex changed to $newFilename.tex"
 for file in $(find . -name '*.tex'); 
 do 
     echo "$file changed"
-    sed -i 's/$currFilename.tex/$newFilename.tex/' $file
+    sed -i "s/$currFilename.tex/$newFilename.tex/" "$file"
 done
